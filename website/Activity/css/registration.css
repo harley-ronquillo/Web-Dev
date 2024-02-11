@@ -1,0 +1,362 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+/*Variables*/
+:root {
+    --main-color: #800000;
+    --second-color: #ffdf00;
+    --tertiary-color: #daa520;
+    --text-color: #fff;
+    --bg-color: #000000;
+  }
+section {
+  padding: 20px 100px;
+}
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+body {
+  color: var(--text-color);
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjusted this line */
+  padding: 15px 80px;
+  transition: 0.5s linear;
+  background: var(--main-color);
+  top: 0;
+  left: 0;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+#titlepup,
+#titleous {
+  margin: 0;
+  transition: color 1s ease;
+}
+
+#titlepup:hover,
+#titleous:hover {
+  color: var(--tertiary-color);
+}
+
+
+.social{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  margin-top: 10px;
+}
+.social img{
+  width: 70px;
+}
+.social a .bx{
+  font-size: 20px;
+  color: var(--text-color);
+  padding: 13px;
+  background: var(--tertiary-color);
+  border-radius: 0.5rem;
+  margin-left: 12px;
+
+}
+.social a .bx:hover{
+  background: var(--second-color);
+  color: var(--bg-color);
+}
+
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 45%;
+    background: var(--second-color);
+    color: var(--bg-color);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group {
+  height: 280px; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Nav Bar */
+.logo img {
+  width: 64px;
+}
+.navbar {
+  display: flex;
+}
+.navbar h1.title{
+  font-family: 'Playfair Display', serif;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  padding: 8px 30px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 3px;
+}
+.navbar a:hover {
+  color: var(--second-color);
+  transition: 0.3s all linear;
+}
+.navbar a.active::after {
+
+  width: 28%;
+  height: 2.5px;
+  background: var(--text-color);
+  position: absolute;
+  bottom: -4px;
+  left: 30px;
+  border-radius: 0.2rem;
+}
+.header-icon {
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10000;
+  display: flex;
+  column-gap: 1.8rem;
+}
+.header-icon .bx {
+  color: var(--bg-color);
+}
+.header-icon .bx:hover {
+  color: var(--tertiary-color);
+  transition: 0.3s all linear;
+}
+
+
+/* Registration Page*/
+.container {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.form-box {
+    width: 90%;
+    max-width: 420px;
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--main-color);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    background-position: center;
+    position: absolute;
+}
+.form-box h1 {
+    font-size: 33px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    position: relative;
+    text-transform: uppercase;
+}
+.form-box h1::after {
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--text-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.semester label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+.semester label[for="semester"] {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+.semester input::placeholder {
+  color: white;
+}
+
+
+
+.input-field {
+    background: #eaeaea;
+    /* margin: 15px 0; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.input-field:hover,
+.input-field:focus-within {
+    outline: 1px solid hsla(0, 0%, 11%, 50%);
+}
+.premove {
+    display: hidden;
+}
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i {
+    margin-left: 15px;
+}
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+form p a {
+    text-decoration: none;
+    color: blue;
+}
+.button-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block-end: 1rem;
+}
+  
+.button-container .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+  
+.button-container .submit-btn:hover {
+    background-color: var(--second-color);
+}
+  
+.button-container .submit-btn:active {
+    background-color: var(--tertiary-color);
+}
+  
+.button-container p a {
+    color: var(--bigbrew-color);
+}
+.button-container p a:hover {
+    text-decoration: underline;
+}
+.input-group .signin-btn{
+    color: var(--main-color);
+    text-align: left;
+    font-weight: 700;
+    width: max-content;
+    font-size: 18px;
+}
+.input-group .signup-btn{
+    color: var(--main-color);
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+}
+.input-group .signup-btn:hover,
+.input-group .signin-btn:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+    color: var(--bigbrew-color);
+}
+.hide {
+    display: none;
+}
+.error-message {
+    position: fixed;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--bg-color);
+    box-shadow: 0 10px 20px #1b1b1b69;
+    z-index: 9999;
+    color: var(--second-color);
+    font-weight: 500;
+    text-align: center;
+}
+.container .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}

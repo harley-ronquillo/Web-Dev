@@ -1,0 +1,352 @@
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+/*Variables*/
+:root {
+    --main-color: #800000;
+    --second-color: #ffdf00;
+    --tertiary-color: #daa520;
+    --text-color: #fff;
+    --bg-color: #000000;
+  }
+  section {
+    padding: 20px 100px;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    color: var(--text-color);
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    position: relative;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjusted this line */
+  padding: 15px 80px;
+  transition: 0.5s linear;
+  background: var(--main-color);
+  top: 0;
+  left: 0;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+#titlepup,
+#titleous {
+  margin: 0;
+  transition: color 1s ease;
+}
+
+#titlepup:hover,
+#titleous:hover {
+  color: var(--tertiary-color);
+}
+
+
+.social{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
+  margin-top: 10px;
+}
+.social img{
+  width: 70px;
+}
+.social a .bx{
+  font-size: 20px;
+  color: var(--text-color);
+  padding: 13px;
+  background: var(--tertiary-color);
+  border-radius: 0.5rem;
+  margin-left: 12px;
+
+}
+.social a .bx:hover{
+  background: var(--second-color);
+  color: var(--bg-color);
+}
+
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 45%;
+    background: var(--second-color);
+    color: var(--bg-color);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group {
+  /* height: 280px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Nav Bar */
+.logo img {
+  width: 64px;
+}
+.navbar {
+  display: flex;
+}
+.navbar h1.title{
+  font-family: 'Playfair Display', serif;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  padding: 8px 30px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 3px;
+}
+.navbar a:hover {
+  color: var(--second-color);
+  transition: 0.3s all linear;
+}
+.navbar a.active::after {
+
+  width: 28%;
+  height: 2.5px;
+  background: var(--text-color);
+  position: absolute;
+  bottom: -4px;
+  left: 30px;
+  border-radius: 0.2rem;
+}
+.header-icon {
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 10000;
+  display: flex;
+  column-gap: 1.8rem;
+}
+.header-icon .bx {
+  color: var(--bg-color);
+}
+.header-icon .bx:hover {
+  color: var(--tertiary-color);
+  transition: 0.3s all linear;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: var(--main-color); /* Dark blue background */
+  color: #FFFFFF; /* White text color */
+  padding: 30px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #F5A623; /* Orange text color */
+  text-transform: uppercase;
+}
+
+.form-box h1::after {
+  width: 60px;
+  height: 3px;
+  border-radius: 5px;
+  background: #F5A623; /* Orange underline */
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.semester {
+  margin-bottom: 20px;
+}
+
+.semester label {
+  font-weight: bold;
+  color: #F5A623; /* Orange text color */
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.semester label[for="semester"] {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.semester input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.input-container {
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap;
+}
+
+.input-field {
+  flex: 1; 
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.input-field input {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.input-field input:focus {
+  background-color: #a0a0a0; 
+  border-color: #313131; 
+}
+
+.input-field:hover,
+.input-field:focus-within {
+  outline: 1px solid #F5A623; 
+}
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+  color: #333; 
+}
+
+form p {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+form p a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+
+.button-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block-end: 1rem;
+}
+  
+.button-container .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+  
+.button-container .submit-btn:hover {
+    background-color: var(--second-color);
+}
+  
+.button-container .submit-btn:active {
+    background-color: var(--tertiary-color);
+}
+
+select {
+  width: 100%; /* Make the select element full width */
+  padding: 10px; /* Add padding for better appearance */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Add rounded corners */
+  background-color: #f9f9f9; /* Add a light background color */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  transition: border-color 0.3s ease; /* Add smooth transition for border color */
+}
+
+/* Hover effect for the <select> element */
+select:hover {
+  border-color: #999; /* Change border color on hover */
+}
+
+/* Focus effect for the <select> element */
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #555; /* Change border color on focus */
+}
+
+
